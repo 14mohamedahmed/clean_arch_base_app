@@ -16,7 +16,7 @@ class AuthRepository extends BaseAuthRepository {
     try {
       return Right(result);
     } on ServerException catch (faliure) {
-      return Left(ServerFailure(faliure.errorMessageModel.statusMessage));
+      return Left(ServerFailure(faliure.errorModel.statusMessage));
     }
   }
 }

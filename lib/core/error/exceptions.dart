@@ -1,10 +1,10 @@
-import 'package:aqarmap/core/network/error_message_model.dart';
+import 'package:aqarmap/core/network/models/api_error_model.dart';
 
 class ServerException implements Exception {
-  final ErrorMessageModel errorMessageModel;
+  final ApiErrorModel errorModel;
 
   const ServerException({
-    required this.errorMessageModel,
+    required this.errorModel,
   });
 }
 
